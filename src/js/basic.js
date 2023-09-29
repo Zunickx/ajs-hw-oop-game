@@ -16,11 +16,22 @@ export default class Character {
         }
     }
 
-    const characterType = [];
+    const characterTypes = [];
     characterType.push(new CharacterType('Bowerman', 25, 25));
     characterType.push(new CharacterType('Swordsman', 40, 10));
     characterType.push(new CharacterType('Magician', 10, 40));
     characterType.push(new CharacterType('Undead', 25, 25));
     characterType.push(new CharacterType('Zombie', 40, 10));
     characterType.push(new CharacterType('Daemon', 10, 40));
+
+    const characterType = characterTypes.find((el) => el.characterType === type);
+    if(!characterType) throw new Error ('Неверный тип персонажа')
+    else {
+        this.type = type;
+        this.atack = characterType.atack;
+        this.defence = characterType.defence;
+    }
+
+    this.health = 100;
+    this.level = 1;
 }
