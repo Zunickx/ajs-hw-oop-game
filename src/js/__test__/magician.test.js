@@ -6,7 +6,7 @@ test('test class Bowerman with valid value of name', () => {
   const magician = new Magician('magician');
   const expected = {
     name: 'magician',
-    type: 'magician',
+    type: 'Magician',
     health: 100,
     level: 1,
     attack: 10,

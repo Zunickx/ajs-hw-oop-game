@@ -9,8 +9,8 @@ test('test class daemon with valid value of name', () => {
     type: 'Daemon',
     health: 100,
     level: 1,
-    attack: 25,
-    defence: 25,
+    attack: 10,
+    defence: 40,
   };
 
   expect(daemon).toEqual(expected);
