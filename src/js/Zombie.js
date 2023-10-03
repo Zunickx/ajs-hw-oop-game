@@ -1,4 +1,4 @@
-import Character from "../js/basic";
+import Character from "./character";
 
 export default class Zombie extends Character {
     constructor(name, type = "Zombie", attack = 40, defence = 10) {

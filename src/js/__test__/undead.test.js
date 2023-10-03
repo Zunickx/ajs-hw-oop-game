@@ -1,4 +1,4 @@
-import Undead from '../undead';
+import Undead from '../Undead';
 
 // проверим тестом, что при создании объекта Undead задаются верные имя и ожидаемые значения
 
@@ -20,7 +20,7 @@ test('test class undead with valid value of name', () => {
 
 test('test class undead with invalid value of name', () => {
   expect(() => {
-    const undead = new Undead('zick');
+    const undead = new Undead('Zickfriedead');
     return undead;
   }).toThrow(new Error('Name length must be in [2;10] interval!'));
 });

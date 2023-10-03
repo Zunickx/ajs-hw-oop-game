@@ -1,4 +1,4 @@
-import Daemon from '../daemon';
+import Daemon from '../Daemon';
 
 // проверим тестом, что при создании объекта Daemon задаются верные имя и ожидаемые значения
 
@@ -20,7 +20,7 @@ test('test class daemon with valid value of name', () => {
 
 test('test class daemon with invalid value of name', () => {
   expect(() => {
-    const daemon = new Daemon('zick');
+    const daemon = new Daemon('Zickfriedead');
     return daemon;
   }).toThrow(new Error('Name length must be in [2;10] interval!'));
 });

@@ -1,4 +1,4 @@
-import Zombie from '../zombie';
+import Zombie from '../Zombie';
 
 // проверим тестом, что при создании объекта Zombie задаются верные имя и ожидаемые значения
 
@@ -20,7 +20,7 @@ test('test class zombie with valid value of name', () => {
 
 test('test class zombie with invalid value of name', () => {
   expect(() => {
-    const zombie = new Zombie('zick');
+    const zombie = new Zombie('Zickfriedead');
     return zombie;
   }).toThrow(new Error('Name length must be in [2;10] interval!'));
 });

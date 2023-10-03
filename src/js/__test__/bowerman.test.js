@@ -1,4 +1,4 @@
-import Bowerman from '../bowerman';
+import Bowerman from '../Bowerman';
 
 // проверим тестом, что при создании объекта Bowerman задаются верные имя и ожидаемые значения
 
@@ -20,7 +20,7 @@ test('test class Bowerman with valid value of name', () => {
 
 test('test class Bowerman with invalid value of name', () => {
   expect(() => {
-    const bowerman = new Bowerman('zick');
+    const bowerman = new Bowerman('Zickfriedead');
     return bowerman;
   }).toThrow(new Error('Name length must be in [2;10] interval!'));
 });

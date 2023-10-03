@@ -17,32 +17,6 @@ export default class Character {
             this.attack = attack;
             this.defence = defence;
         }
-
-
-
-        // class CharacterType {
-        //     constructor(characterType, atack, defence) {
-        //         this.characterType = characterType;
-        //         this.atack = atack;
-        //         this.defence = defence;
-        //     }
-        // }
-    
-        // const characterTypes = [];
-        // characterTypes.push(new CharacterType('Bowerman', 25, 25));
-        // characterTypes.push(new CharacterType('Swordsman', 40, 10));
-        // characterTypes.push(new CharacterType('Magician', 10, 40));
-        // characterTypes.push(new CharacterType('Undead', 25, 25));
-        // characterTypes.push(new CharacterType('Zombie', 40, 10));
-        // characterTypes.push(new CharacterType('Daemon', 10, 40));
-    
-        // const characterType = characterTypes.find((el) => el.characterType === type);
-        // if(!characterType) throw new Error ('Неверный тип персонажа')
-        // else {
-        //     this.type = type;
-        //     this.atack = characterType.atack;
-        //     this.defence = characterType.defence;
-        // }
     }    
 
     levelUp() {
