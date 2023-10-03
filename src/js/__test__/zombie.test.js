@@ -9,8 +9,8 @@ test('test class zombie with valid value of name', () => {
     type: 'Zombie',
     health: 100,
     level: 1,
-    attack: 25,
-    defence: 25,
+    attack: 40,
+    defence: 10,
   };
 
   expect(zombie).toEqual(expected);
