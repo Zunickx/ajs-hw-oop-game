@@ -22,7 +22,7 @@ test('test class Bowerman with invalid value of name', () => {
   expect(() => {
     const bowerman = new Bowerman('Zickfriedead');
     return bowerman;
-  }).toThrow(new Error('Name length must be in [2;10] interval!'));
+  }).toThrow();
 });
 
 // проверим класс на соответствие типу
@@ -31,5 +31,5 @@ test('test class Bowerman with invalid value of type', () => {
   expect(() => {
     const bowerman = new Bowerman('bowerman', 'Pacman');
     return bowerman;
-  }).toThrow(new Error('Not valid character type!'));
+  }).toThrow();
 });

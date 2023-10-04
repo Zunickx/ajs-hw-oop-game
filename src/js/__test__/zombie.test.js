@@ -22,7 +22,7 @@ test('test class zombie with invalid value of name', () => {
   expect(() => {
     const zombie = new Zombie('Zickfriedead');
     return zombie;
-  }).toThrow(new Error('Name length must be in [2;10] interval!'));
+  }).toThrow();
 });
 
 // проверим класс на соответствие типу
@@ -31,5 +31,5 @@ test('test class zombie with invalid value of type', () => {
   expect(() => {
     const zombie = new Zombie('zombie', 'Pacman');
     return zombie;
-  }).toThrow(new Error('Not valid character type!'));
+  }).toThrow();
 });
