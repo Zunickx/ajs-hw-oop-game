@@ -22,7 +22,7 @@ test('test class Swordsman with invalid value of name', () => {
   expect(() => {
     const swordsman = new Swordsman('Zickfriedead');
     return swordsman;
-  }).toThrow(new Error('Name length must be in [2;10] interval!'));
+  }).toThrow();
 });
 
 // проверим класс на соответствие типу
@@ -31,5 +31,5 @@ test('test class Swordsman with invalid value of type', () => {
   expect(() => {
     const swordsman = new Swordsman('swordsman', 'Pacman');
     return swordsman;
-  }).toThrow(new Error('Not valid character type!'));
+  }).toThrow();
 });

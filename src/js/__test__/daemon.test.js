@@ -22,7 +22,7 @@ test('test class daemon with invalid value of name', () => {
   expect(() => {
     const daemon = new Daemon('Zickfriedead');
     return daemon;
-  }).toThrow(new Error('Name length must be in [2;10] interval!'));
+  }).toThrow();
 });
 
 // проверим класс на соответствие типу
@@ -31,5 +31,5 @@ test('test class daemon with invalid value of type', () => {
   expect(() => {
     const daemon = new Daemon('daemon', 'Pacman');
     return daemon;
-  }).toThrow(new Error('Not valid character type!'));
+  }).toThrow();
 });

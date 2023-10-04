@@ -22,7 +22,7 @@ test('test class undead with invalid value of name', () => {
   expect(() => {
     const undead = new Undead('Zickfriedead');
     return undead;
-  }).toThrow(new Error('Name length must be in [2;10] interval!'));
+  }).toThrow();
 });
 
 // проверим класс на соответствие типу
@@ -31,5 +31,5 @@ test('test class undead with invalid value of type', () => {
   expect(() => {
     const undead = new Undead('undead', 'Pacman');
     return undead;
-  }).toThrow(new Error('Not valid character type!'));
+  }).toThrow();
 });

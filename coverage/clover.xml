@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1696363032390" clover="3.2.0">
-  <project timestamp="1696363032390" name="All files">
+<coverage generated="1696447977147" clover="3.2.0">
+  <project timestamp="1696447977148" name="All files">
     <metrics statements="37" coveredstatements="37" conditionals="32" coveredconditionals="31" methods="9" coveredmethods="9" elements="78" coveredelements="77" complexity="0" loc="37" ncloc="37" packages="1" files="7" classes="7"/>
     <file name="Bowerman.js" path="C:\Users\we\Desktop\ajs-hw-oop-game\src\js\Bowerman.js">
       <metrics statements="3" coveredstatements="3" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
